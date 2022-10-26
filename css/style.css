@@ -1,0 +1,413 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif; 
+}
+:root {
+    --starbucks-color: #006241;
+    --circle-color: #d8f007;
+    --span_yellow-color: yellow;
+    --negro_opaco-color: rgb(20, 20, 20);
+}
+
+/*========================= mobile =========================*/
+
+.header {
+    display: flex;
+    position: fixed;
+    z-index: 100;
+    padding: 20px;
+    width: 100%;
+    height: 85px;
+    background: var(--starbucks-color);
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 2px 8px 26px 0px rgb(0 0 0 / 75%);
+}
+.header__logo {
+    width: 3em;
+    height: 3em;
+}
+.header__nav {
+    display: none;
+}
+.header__icon-user {
+    display: none;
+}
+.header__icon-list {
+    color: rgb(255, 255, 255);
+    font-size: 2.5em;
+}
+.header__icon-list:hover {
+    font-size: 3em;
+}
+
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 110px 10px 30px 10px;
+}
+.main__container-text {
+    padding: 10px 30px;
+}
+.main__title {
+    font-size: 4.5em;
+    font-weight: 600;
+    line-height: 1.2em;
+}
+.main__title::selection {
+    background: var(--starbucks-color);
+}
+.span__green {
+    color: var(--starbucks-color);
+}
+.main__p {
+    padding-top: 20px;
+    font-size: 1.15em;
+    text-align: left;
+}
+.main__p::selection {
+    background: var(--starbucks-color);
+}
+.main__container-img {
+    display: none;
+}
+
+
+.gallery {
+    padding: 40px 20px;
+    background: var(--starbucks-color);
+}
+.gallery__container-img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.gallery__img {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--starbucks-color);
+    border-radius: 30px;
+}
+
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: var(--negro_opaco-color);
+    padding: 40px 30px;
+}
+.contact__title {
+    padding: 40px;
+    color: var(--starbucks-color);
+    text-transform: uppercase;
+    font-size: 2.8em;
+    font-weight: 500;
+}
+.contact__title::selection {
+    background: var(--starbucks-color);
+}
+.contact__form {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    width: 100%;
+    background: var(--starbucks-color);
+    border: 1px solid var(--starbucks-color);
+    border-radius: 10px;
+}
+.contact__form-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+.contact__form-label {
+    color: white;
+    font-size: 1.3em;
+}
+.contact__form-input {
+    margin-top: 5px;
+    border-radius: 0.7em;
+    border: 1px solid var(--starbucks-color);
+    padding: 0.8em;
+    font-weight: 600;
+}
+.contact__form-input:focus {
+    background: black;
+    border: 1px solid white;
+}
+.contact__form-input::placeholder {
+    color: var(--starbucks-color);
+}
+.contact__form-button {
+    height: 2.5em;
+    width: 14em;
+    margin-top: 0.5em;
+    border: 2px solid white;
+    border-radius: 0.8em;
+    background-color: var(--starbucks-color);
+    color: white;
+    font-size: 1em;
+}
+.contact__form-button:hover {
+    background: yellow;
+    border: 1px solid yellow;
+    transition: 2s;
+}
+
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3em 2em;
+}
+.cards__container-card {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    background: var(--starbucks-color);
+    width: 90%;
+    margin-top: 2.5em;
+    border: 1px solid white;
+    border-radius: 20px;
+}
+.cards__card-img {
+    width: 100%;
+    border: 1px solid white;
+    border-radius: 20px 20px 0 0;
+}
+.cards__card-circle {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    top: -1.2em;
+    right: -1.2em;
+    background: var(--circle-color);
+    border-radius: 50%;
+    font-size: 1.4em;
+    font-weight: 600;
+    width: 3.5em;
+    height: 3.5em;
+}
+.cards__card__container-text {
+    display: flex;
+    flex-direction: column;
+    padding: 0.5em 1em;
+}
+.cards__card-title {
+    color: white;
+    font-size: 1.4em;
+    font-weight: 600;
+}
+.span__yellow {
+    color: var(--span_yellow-color);
+}
+.cards__card-text {
+    padding: 1em 0;
+    color: white;
+    font-size: 0.9em;
+    font-weight: 300;
+}
+.cards__card-button {
+    margin: 10px 0;
+    width: max-content;
+    padding: 0.5em 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background: var(--starbucks-color);
+    border: 1px solid white;
+    border-radius: 10px;
+    font-size: 0.8em;
+}
+.cards__card-button:hover {
+    background: yellow;
+    border: 1px solid yellow;
+    transition: 1s;
+}
+
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: black;
+    padding: 2em;
+}
+.footer__container-user {
+    display: flex;
+    flex-direction: column;
+}
+.footer__user {
+    text-decoration: none;
+    color: var(--starbucks-color);
+    font-size: 1.3em;
+}
+.footer__user:hover {
+    text-decoration: underline;
+}
+.footer__container-network {
+    display: flex;
+    flex-direction: row;
+    color: var(--starbucks-color);
+}
+.footer__network-icon {
+    padding: 1em 1em 1em 0;
+    font-size: 1.5em;
+}
+.footer__network-icon:hover {
+    font-size: 2em;
+    padding-top: 0.5em;
+    cursor: pointer;
+}
+.footer__contact-us {
+    text-decoration: none;
+    color: rgb(6, 164, 0);
+    font-size: 1.3em;
+}
+.footer__contact-us:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/*========================= tablet =========================*/
+
+@media (min-width: 768px) {
+    .header__nav {
+        display: block;
+    }
+    .header__nav-link {
+        text-decoration: none;
+        color: white;
+        text-transform: uppercase;
+        margin-left: 1em;
+    }
+    .header__nav-link:hover {
+        font-size: 1.2em;
+    }
+    .header__icon-list {
+        display: none;
+    }
+    .header__icon-user {
+        display: block;
+        color: white;
+        font-size: 2.5em;
+    }
+    .header__icon-user:hover {
+        cursor: pointer;
+    }
+
+    .main {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 110px 20px 40px 20px;
+    }
+    .main__container-text {
+        width: 48%;
+    }
+    .main__title {
+        font-size: 3.4em;
+    }
+    .main__p {
+        font-size: 1em;
+    }
+    .main__container-img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 48%;
+        padding: 20px;
+    }
+    .main__img {
+        width: 90%;
+    }
+
+    .gallery__container-img {
+        flex-direction: row;
+        align-items: stretch;
+        justify-content: space-between;
+    }
+    .gallery__img {
+        width: 32%;
+    }
+
+    .contact__form {
+        width: 65%;
+    }
+
+    .cards {
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: stretch;
+        padding: 2em 2.5em 3em;
+    }
+    .cards__container-card {
+        width: 45%;
+    }
+
+    .footer {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .footer__network-icon {
+        padding: 1em;
+    }
+}
+
+/*========================= escritorio =========================*/
+
+@media (min-width: 1024px) {
+    .header__nav-link {
+        font-size: 1.2em;
+    }
+    .header__nav-link:hover {
+        font-size: 1.4em;
+    }
+
+    .main__title {
+        font-size: 4.6em;
+    }
+    .main__p {
+        font-size: 1.25em;
+    }
+
+    .contact__form {
+        padding: 30px;
+    }
+    .contact__form-container {
+        margin-bottom: 30px;
+    }
+    .contact__form-textarea {
+        height: 9em;
+    }
+    
+    .cards {
+        padding: 2em 3.5em 3em;
+    }
+    .cards__card-title {
+        font-size: 1.7em;
+    }
+    .cards__card-text {
+        font-size: 1.1em;
+    }
+    .cards__card__container-button {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .footer {
+        padding: 5em 3em;
+    }
+}
