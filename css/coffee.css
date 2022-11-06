@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif; 
+}
+:root {
+    --starbucks-color: #006241;
+    --circle-color: #d8f007;
+    --span_yellow-color: yellow;
+    --negro_opaco-color: rgb(20, 20, 20);
+}
+img {
+    width: 70px;
+}
+.navbar {
+    background: var(--starbucks-color);
+    height: 85px;
+    width: 100%;
+    display: flex;
+    position: fixed !important;
+    top: 0;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /*---------AGREGAR BOX SHADOW--------*/
+}
+.navbar__container-logo {
+    display: flex;
+    margin: 0 20px;
+}
+.navbar__logo {
+    display: flex;
+    width: 50px;
+    border: 1px solid transparent;
+    border-radius: 50%;
+}
+.navbar__link {
+    display: none;
+}
+.navbar__container-list {
+    margin: 0 10px;
+}
+.bi-list {
+    font-size: 40px;
+    display: flex;
+    color: white;
+    align-content: center;
+}
+.navbar__container-login {
+    display: none;
+}
+.main {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background-image: url(../image/background-img.jpg);
+    padding-top: 160px;
+}
+.main-left {
+    display: flex;
+    flex-direction: column;
+}
+.main-left__title {
+    color: white;
+    font-size: 50px;
+}
+.main-left__container-punctuation {
+    display: flex;
+    flex-direction: row;
+    margin: 15px 0;
+    align-items: center;
+    justify-content: space-between;
+    width: max-content;
+}
+.star {
+    font-size: 25px;
+    color: yellow;
+}
+.main-left__container-price {
+    color:#0DFF00;
+    font-size: 28px;
+    font-weight: 500;
+    margin-left: 10px;
+}
